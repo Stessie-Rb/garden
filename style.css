@@ -1,0 +1,272 @@
+/*Mes styles*/ 
+/*mini reset*/
+*{
+	margin:0;
+	padding:0;
+}
+ul{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+/*font-family: 'Cabin Condensed', sans-serif;*/
+/********************/
+/* fonts récupérés avec font squirrel */
+@font-face {
+    font-family: 'megan_juneregular';
+    src: url('font/megan_june-webfont.woff2') format('woff2'),
+         url('font/megan_june-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	background-color: white;
+}
+
+#page{
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #dedddd;
+}
+#bandeau{
+	background-color: white;
+	min-height: 95px;
+	line-height: 95px;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 2%;
+	font-family: 'megan_juneregular';
+	
+}
+#bandeau h1{
+	font-size: 50px;
+}
+#bandeau h1 a{
+	color: #000;
+	border-bottom: 14px solid #993645;
+	padding-bottom: 6px;
+}
+#bandeau #menuprincipal{
+	width: 50%;
+	font-size: 34px;
+	text-transform: uppercase;
+}
+#bandeau #menuprincipal ul{
+	display: flex;
+	align-items: flex-end;
+	padding-right: 2%;
+}
+#bandeau #menuprincipal ul li{
+	margin-left: 5%;
+}
+#bandeau #menuprincipal ul li a{
+	color: #000;
+	padding-bottom: 14px;
+}
+#bandeau #menuprincipal ul li a:hover,
+#bandeau #menuprincipal ul li a.choix{
+	border-bottom: 14px solid #17cd28;
+}
+#slider img{
+	width: 100%;
+	background-color: #dedddd;
+}
+#en-avant{
+	background-color: #dedddd;
+	display: flex;
+	padding: 20px 1%;
+	justify-content: space-between;
+}
+#en-avant .promo{
+	box-sizing: border-box;
+	background-color: #fff;
+	width: 32%;
+	border: 1px solid #999898;
+	padding: 30px 3%;
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
+}
+#en-avant .promo img{
+	margin-bottom: 30px;
+}
+#en-avant .promo h3{
+	font-family: 'Cabin Condensed', sans-serif;
+	margin-bottom: 10px;
+}
+#en-avant .promo hr{
+	width: 12%;
+	color: #933645;
+}
+#en-avant .promo p{
+	margin: 20px 0;
+	width: 70%;
+	line-height: 30px;
+	text-align: justify;
+}
+#intro{
+	background-color: white;
+	padding: 30px 2% 0;	
+}
+#intro hr{
+	width: 5%;
+	color: #933645;
+	margin-top: 15px;
+}
+#intro h2{
+	font-family: 'megan_juneregular';
+	font-size: 60px;
+	text-transform: uppercase;
+	margin-left: 4%;
+	padding: 30px 2%;
+	letter-spacing: 5px;
+}
+#intro img{
+	width: 32%;
+}	
+#intro-accueil{
+	float: right;
+	width:60%;
+	background-color:white;
+}
+#intro-accueil p{
+	margin: 70px 0;
+	font-size: 18px;
+	width: 80%;
+	font-family: 'Cabin Condensed', sans-serif;
+}
+#intro-accueil ul{
+	column-count: 2;
+	column-gap: 5%;
+	width: 70%;
+	margin-bottom: 40px;
+}
+#intro-accueil ul li a{
+	font-family: 'megan_juneregular';
+	font-size: 20px;
+	color: black;
+	line-height: 35px;
+	background-image: url(images-garden/feuille-picto.jpg);
+	background-repeat: no-repeat;
+	background-position: left -2px;
+	padding-left: 45px;
+}
+/*bouton plus d'infos*/
+#intro-accueil a.bouton{
+	color: white;
+	background-color: #17cd28;
+	padding: 10px 1%;
+	border-radius: 10px;
+}
+#deco{
+	width: 100%;
+	min-height: 200px;
+	background-image: url('images-garden/home-05.jpg');
+	/*pour etirer l'image et lui faire couvrir la largeur du bloc*/
+	background-size: cover;
+	margin-top: -4px;
+}
+#deco h4{
+	font-family: 'megan_juneregular';
+	font-weight: bold;
+	font-size: 60px;
+	text-align: center;
+	color: white;
+	line-height: 200px;
+	height: 200px;
+}
+#pied{
+	background-color: black;
+	width: 100%;
+	min-height: 200px;
+	display:flex;
+	color: white;
+	/*inclure les padding etc dans la taille du bloc sans l'augmenter, sans l'impacter*/
+	box-sizing: border-box;
+	padding: 30px 2%;
+}
+#pied #gauche,#pied #droit{
+	width: 50%;
+	font-family: 'megan_juneregular';
+}
+#pied #gauche address{
+	font-style: normal;
+	font-size: 22px;
+}
+#pied #gauche #reseaux img{
+	margin-right: 10px;
+	margin-top: 10px;
+	width: 30px;
+}
+#pied #droit p{
+	text-align: right;
+	font-size: 22px;
+}
+.majuscules{
+	text-transform: uppercase;
+	font-size: 28px;
+	line-height: 40px;
+}
+#pied #droit p a{
+	color: white;
+}
+#pied #droit p a img{
+	width: 50px;
+}
+/*----Modif slider----*/
+.theme-default .nivo-controlNav a {
+	display:inline-block;
+	width:30px;
+	height:15px;
+	background:url(images-garden/rectangle-blanc-slider.PNG) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	margin: 0 2px;
+}
+.theme-default .nivo-controlNav a.active {
+	background-position:0 -22px;
+	background:url(images-garden/rectangle-rouge-slider.PNG) no-repeat;
+}
+.vert{
+	color: #17cd28;
+	padding-bottom: 15px;
+	border-bottom: 15px solid white;
+}
+.nivo-caption {
+	position:relative;
+	left:250px;
+	top:190px;
+	background: transparent;
+	color:#fff;
+	width:100%;
+	z-index:8;
+	padding: 5px 10px;
+	opacity: 0.8;
+	overflow: hidden;
+	display: none;
+	-moz-opacity: 0.8;
+	filter:alpha(opacity=8);
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.nivo-caption p {
+	font-size: 40px;
+	font-family: 'megan_juneregular';
+	padding:5px;
+	margin:0;
+}
+.nivo-caption p .titre-slide{
+	font-size: 150px;
+	letter-spacing: 25px;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
